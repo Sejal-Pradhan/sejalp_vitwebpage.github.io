@@ -1,0 +1,564 @@
+body{
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(255, 247, 104);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100px;
+    width: 100%;
+}
+
+.heading, .content1{
+    z-index: 9;
+    margin: 0px 15px;
+}
+
+.heading {
+    font-family: 'Dosis', sans-serif;;
+    cursor: pointer;
+    transition: transform .2s;
+    z-index: 9;
+    text-align: center;
+    color: rgb(0, 50, 73);
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.content1 {
+    padding: 20px;
+    margin-left: 0px;
+    display: flex;
+    align-items: top;
+}
+
+.para1 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    transition: transform .2s;
+    border: 5px solid rgb(63, 68, 69);
+    background-color: rgb(167, 186, 187);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 33%;
+    height: 70%;
+    font-weight: bold;
+    text-align: left;
+    padding: 25px;
+    margin: 15px 12px;
+}
+
+.nav {
+    padding-top: 0px;
+    margin: 0px;
+    background-color: darkcyan;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    opacity: 90%;
+}
+
+.nav::before {
+    padding: 0px;
+    margin: 0px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-flex;
+    font-size: 25px;
+    margin: 0.2px 25px;
+    padding: 0px;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    margin: 5px;
+}
+
+.nav li a:hover {
+    border: 5px solid white;
+    border-radius: 6px;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #000000;
+    width: 0%;
+  }
+  
+  .menu-btn {
+    background-color: darkcyan;
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+ }
+ .dropdown-menu {
+    position: relative;
+    display: inline-block;
+ }
+ .menu-content {
+    display: none;
+    position: absolute;
+    background-color: #36111a;
+    align-items: center;
+    border-radius: 10px;
+    min-width: 150px;
+    z-index: 1;
+ }
+
+ .dropdown-menu:hover .menu-content {
+    display: block;
+ }
+ .dropdown-menu:hover .menu-btn:hover {
+    border: 0px solid white;
+    border-radius: 15px;
+    background-color: aliceblue;
+    color: black;
+ }
+ .links-hidden{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+ }
+ .links-hidden{
+    display: block;
+ }
+ .links-hidden:hover{
+    background-color: rgb(8, 107, 46);
+    border-radius: 10px;
+ }
+
+.img1{
+    position: relative;
+    z-index: -99;
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+}
+.campuslife img{
+    position: absolute;
+    filter: brightness(140%);
+    z-index: -23;
+    width: 100%;
+    height: 600px;
+    padding-top: 25px;
+    margin: 0px;
+}
+.achieve::before {
+    content: "";
+    background-color: rgb(88, 12, 88);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.achieve {
+    display: flex;
+    position: relative;
+    z-index: -9;
+    border: 12px solid rgb(85, 0, 128);
+    background-color: rgb(81, 15, 152);
+    border-radius: 30px;
+    height: 185px;
+    padding: 30px;
+    margin: 10px 50px 30px 50px;
+    flex-basis: 700px;
+}
+
+.name {
+    display: flex;
+    width: 100%;
+}
+
+.name1, .name2, .name3 {    
+    padding-left: 50px;
+    position: relative;
+    width: 55%;
+}
+.name1 a, .name2 a, .name3 a{
+    font-family: 'DM Sans', sans-serif;
+}
+.achieve a{
+    cursor: pointer;    
+    padding-left: 10px;
+    color: gold;
+    text-align: left;
+    margin-right: 100px;
+    text-decoration: none;
+}
+.name2 a, .name3 a{
+    padding-left: 0px;
+    margin-right: 40px;
+}
+.achieve a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.name1 img, .name2 img, .name3 img {
+    transition: transform .2s;
+    padding-left: 30px;
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+}
+.achieve img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.image img:hover{
+    filter: brightness(100%);
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.7);
+}
+.students img {
+    margin: 0px;
+    padding: 0px;
+    height: 500px;
+    width: 100%;
+    z-index: -7;
+    opacity: 88%;
+    position: absolute;
+}
+
+.image img{
+    filter: brightness(0%);
+    padding-top: 0px;
+    height: 150px;
+    width: 150px;
+}
+
+@media only screen and (max-width:750px) {
+    body {
+        width: 100%;
+    }
+    .name1, .name2, .name3 {
+        padding-left: 0px;
+        position: relative;
+
+    }
+    .achieve a{
+        margin: 20px;
+    }
+    .achieve {
+        padding-bottom: 500px;
+        width: 50%;
+        display: block;
+        height: 205px;
+    }
+    .name{
+        display: block;
+    }
+    .content1{
+
+        display: block;
+    }
+    .para1{
+        width: 92%;
+    }
+    .achievements li{
+        color: rgb(255, 255, 255);
+    }
+    #end{
+        display: block;
+        width: 100%;
+    }
+    .ending{        
+        padding-bottom: 780px;
+    }
+    .border1, .border2, .border3{
+        position: relative;          
+        max-height: 390px;  
+    }
+    #b1, #b2, #b3{
+        width: 97%;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width:999px) {
+    body {
+        width: 100%;
+    }
+    .name1, .name2, .name3 {
+        padding-left: 0px;
+        position: relative;
+        width: 50%;
+    }
+    .achieve {
+        height: 205px;
+    }
+    .content1{
+        display: block;
+    }
+    .para1{
+        width: 92%;
+    }
+    .ending{
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width:1400px) {
+    body {
+        width: 100%;
+    }
+    .achieve {
+        height: 185px;
+    }
+    .content1{
+        display: block;
+    }
+    .para1{
+        width: 92%;
+    }
+}
+
+.content1 summary a{
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+}
+.para1 summary a:hover{
+    color: rgb(0, 0, 255);
+}
+.content1 summary a:active{
+    color: rgb(239, 223, 255);
+}
+
+.heading {
+    animation: title 3s 1;
+}
+.achievements{
+    border-radius: 50px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.achievements, .achievements li{
+    width: 98%;
+}
+.achievements li{
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-top: 15px;    
+}
+.achievements a{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(33, 20, 4);
+    opacity: 88%;
+    text-decoration: none;
+    padding: 5px;
+    margin: 12px;
+    cursor: pointer;
+}
+.achievements img{
+    transition: transform .2s;
+    margin: 8px;
+    width: 40%;
+    display: inline;
+}
+.achievements img:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+}
+.heading{
+    animation-name: title;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes title {
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 98%;
+    }
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+#myBtn {
+    margin: 7px;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 6; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(179, 242, 254); /* Set a background color */
+  color: rgb(0, 0, 0); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 120px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #3f9af5; /* Add a dark-grey background on hover */
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+    margin-top: 10px;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+.center{
+    font-weight: bolder;
+    background-color: aliceblue;
+    text-align: center;
+    color: black;
+    font-size: 17px;
+}
+.ending{
+    color: aliceblue;
+    background-color: rgb(0, 0, 98);   
+    display: flex; 
+    height: 420px;
+    width: 100%;
+}
+.border1, .border2, .border3{
+    position: relative;
+    width: 33%;
+    padding-left: 2%;
+    height: 440px;
+}
+.border1 img{
+    position: absolute;
+    filter: brightness(600%);
+    padding-left: 25%;
+    width: 100px;
+    height: 120px;
+    margin: 20px;
+}
+.border1 i{
+    font-size: 25px;
+}
+.pp{
+    padding-top: 150px;
+    padding-left: 0px;
+}
+.border2 li a, .border3 li a{
+    text-decoration: none;
+    color: azure;
+}
+.border2 li a:hover, .border3 li a:hover{
+    color: aqua;
+}
+.border2 li a:active, .border3 li a:active{
+    color: blueviolet;
+}
+
+.fa-facebook, .fa-google, .fa-instagram, .fa-linkedin, .fa-youtube, .fa-twitter {
+    padding: 10px;
+    font-size: 55px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100px;
+  }
+  
+  .fa-facebook:hover {
+      background-color: #003ec5;
+      color: white;
+  }
+  .fa-google:hover {
+      background-color: #da0000;
+      color: white;
+  }
+  .fa-twitter:hover {
+      background-color: #06deff;
+      color: white;
+  }
+  .fa-instagram:hover {
+      background-color: #bc00c9;
+      color: white;
+  }
+  .fa-linkedin:hover {
+      background-color: #0027d7;
+      color: white;
+  }
+  .fa-linkedin:hover {
+      background-color: #0027d7;
+      color: white;
+  }
+  .fa-youtube:hover {
+      background-color:#da0000;
+      color: #ffffff; 
+  }
+  
+  .fa-facebook {
+    background: white;
+    color:#5468ff; 
+  }
+  
+  .fa-twitter {
+    background: white;
+    color: #55ACEE;
+  }
+  
+  .fa-google {
+    background: white;
+    color: #dd4b39;
+  }
+  
+  .fa-linkedin {
+    background: white;
+    color: #007bb5;
+  }
+  
+  .fa-youtube {
+    background: #ffffff;
+    color: rgb(235, 0, 0);
+  }
+  
+  .fa-instagram {
+    background: white;
+    color: #7f0c7b;
+  }
